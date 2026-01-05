@@ -1,501 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        /* ИСПРАВЛЕНИЯ ДЛЯ ПРОКРУТКИ И ОТСТУПОВ */
-        html, body {
-            overflow-y: auto !important;
-            overflow-x: hidden !important;
-            height: auto !important;
-            min-height: 100% !important;
-        }
-        
-        .wrapper {
-            overflow-y: auto !important;
-            height: auto !important;
-            min-height: 100vh !important;
-        }
-        
-        /* ИСПРАВЛЕНИЕ ДЛЯ ФИКСИРОВАННОГО HEADER */
-        .hero {
-            padding-top: 80px !important;
-        }
-        
-        /* УЛУЧШЕННЫЕ ОТСТУПЫ */
-        section {
-            padding: 32px 16px 48px 16px !important;
-            margin-bottom: 32px !important;
-        }
-        
-        h2.section-headline {
-            margin-top: 24px !important;
-            margin-bottom: 24px !important;
-        }
-        
-        p.big {
-            margin-top: 12px !important;
-            margin-bottom: 16px !important;
-            line-height: 1.6 !important;
-        }
-        
-        @media screen and (max-width: 960px) {
-            .hero {
-                padding-top: 60px !important;
-            }
-            
-            section {
-                padding: 24px 16px 32px 16px !important;
-            }
-            
-            h1.primary-headline {
-                font-size: 2.5em !important;
-            }
-        }
-    </style>
 <head>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        dataLayer.push({
-            'brandName': 'Sub-Zero' 
-        });
-    </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      'brandName': 'Dacor'
+    });
+  </script>
 
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KRWMRCGX');</script>
-<!-- End Google Tag Manager -->
-    <style>
-        h1{
-            color: var(--color-primary);
-        }
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KRWMRCGX');</script>
+  <!-- End Google Tag Manager -->
 
-        .bg-hero{
-            position: absolute;
-            height: inherit;
-            width: 100%;
-            background-image: url(/assets/images/bg-image-2.webp);
-            background-size: cover;
-            z-index: -1;
-            opacity: 0.2;
-            border-bottom: solid 1px;
-        }
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+     (function(m,e,t,r,i,k,a){
+     m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+     m[i].l=1*new Date();
+     for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+     k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-        @media screen and (max-width: 960px){
-            .bg-hero{
-                /* background-image: url(/assets/images/bg-image-2_mobile.webp); */
-                background-image: none;
-                border: none;
-            }
-        }
+     ym(105949121, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true,
+          ecommerce:"dataLayer"
+     });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/105949121" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
 
-    </style>
-    <link rel="stylesheet" href="/css/style.css">
-    <meta charset="UTF-8">
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-       (function(m,e,t,r,i,k,a){
-       m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-       m[i].l=1*new Date();
-       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-       ym(105949121, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true,
-            ecommerce:"dataLayer"
-       });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/105949121" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="content-language" content="en">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Sub-Zero Appliance Repair in Southlake, Westlake, Colleyville, Trophy Club, Highland Village, Grapevine, Flower Mound, Coppell, Keller, Carrollton | AC/DC Service</title>
-    <meta name="description" content="Expert Sub-Zero repair in Southlake, Westlake, Colleyville, Trophy Club, Highland Village, Grapevine, Flower Mound, Coppell, Keller, Carrollton. Refrigerators, freezers, wine coolers & ice makers. Same-day service.">
-<link rel="stylesheet" href="/css/style.css">
-
-<link rel="stylesheet" href="/css/scroll-fix.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dacor Appliance Repair in Southlake, Westlake, Colleyville, Grapevine | AC/DC Service</title>
+  <meta name="description" content="Independent Dacor appliance specialists serving Southlake, Westlake, Colleyville, Grapevine, and nearby DFW cities. Fast response, transparent pricing, and premium kitchen care.">
+  <link rel="canonical" href="https://decor.acdchomeservices.com/">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body class="wrapper">
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRWMRCGX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <header class="top-bar">
-    <div class="fixed-width-container">
-        <div class="nav--container">
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRWMRCGX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-            <a class="nav-link" href="/">
-                <svg id="logotype" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3133.28 928.61"><title>Монтажная область 12 копия</title><path d="M1270.28,513.93l79,295,126-34-78-295Zm-123,166a128,128,0,1,1,128-128A127.61,127.61,0,0,1,1147.28,679.93Zm0,132a260,260,0,1,0-260-260A259.48,259.48,0,0,0,1147.28,811.93Z"/><path d="M1543.28,551.93a260.22,260.22,0,0,0,444,184l-93-93c-23,23-55,37-91,37a128,128,0,0,1,0-256c36,0,68,14,91,38l93-94a260.22,260.22,0,0,0-444,184Z"/><path d="M2441.17,523l127-34-133-489-126,33Zm-189-82c62-35,139-15,174,47s15,139-46,175-140,14-175-47C2169.17,554,2190.17,476,2252.17,441Zm-66-114c-125,72-168,230-96,355,72,124,231,167,356,95,124-72,167-231,95-355C2469.17,297,2310.17,255,2186.17,327Z"/><path d="M2689.28,551.93a260.22,260.22,0,0,0,444,184l-93-93c-23,23-55,37-91,37a128,128,0,0,1,0-256c36,0,68,14,91,38l93-94a260.22,260.22,0,0,0-444,184Z"/><path d="M0,171.89V928.61H756.72V171.89ZM382.89,783.61h0c-129.38,0-234.26-104.89-234.26-234.27h0c0-129.38,104.88-234.26,234.26-234.26h0c129.39,0,234.27,104.88,234.27,234.26h0C617.16,678.72,512.28,783.61,382.89,783.61Z"/></svg>
-
-            <main role="main" class="main">
-
-            <!-- CALL BUTTON -->
-            <div class="cat-button-container">
-                <a href="tel:+14697300309" class="phone-number" class="cat-button">📞 Call Now: +1 (469) 730-0309</a>
-            </div>
-
-            <!-- HERO -->
-            <header class="hero">
-                <div class="bg-hero"></div>
-                <div class="fixed-width-container">
-                    <div class="header">
-                        <h1 class="primary-headline">Sub-Zero Repair Services</h1>
-                        
-                    </div>
-                </div>
-            </header>
-
-            <!-- SERVICES -->
-            <section>
-                <div class="fixed-width-container">
-                    <hr>
-                    <h2 class="section-headline">We service all Sub-Zero appliances</h2>
-                    <ul class="appliance-list">
-                        <li>Built-in Refrigerators</li>
-                        <li>Undercounter Units</li>
-                        <li>Wine Coolers</li>
-                        <li>Freezers</li>
-                        <li>Ice Makers</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- TRUST -->
-            <section class="trust">
-                <div class="fixed-width-container">
-                    <hr>
-                    <h2 class="section-headline">Why homeowners in DFW trust us</h2>
-                    <div class="trust-text-block">
-                        <p class="big">We focus exclusively on premium appliances like Sub-Zero. Every repair is performed with precision, respect for your home, and clear communication.</p>
-                    </div>
-                    <div class="trust-list">
-                        <div class="trust-block">
-                            <h3 class="section-subheadline trust-block-title">Same-day service</h3>
-                            <p class="big">Call before noon and we’ll arrive the same day — evenings and weekends available.</p>
-                        </div>
-                        <div class="trust-block">
-                            <h3 class="section-subheadline trust-block-title">Real warranty</h3>
-                            <p class="big">We back every repair with a 6-month labor warranty and coverage on installed parts.</p>
-                        </div>
-                        <div class="trust-block">
-                            <h3 class="section-subheadline trust-block-title">Local team</h3>
-                            <p class="big">No call centers or subcontractors. You deal directly with our local office in Grapevine.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ADVANTAGES -->
-            <section class="section__colored">
-                <div class="fixed-width-container">
-                    <h2 class="section-headline white">Our advantages</h2>
-                    <div class="benefits-list">
-                        <div class="benefits-block">
-                            <h3 class="section-subheadline white">Fast response</h3>
-                            <p class="big white__muted">We value your time. Most appointments are completed within 24 hours.</p>
-                        </div>
-                        <div class="benefits-block">
-                            <h3 class="section-subheadline white">Transparent pricing</h3>
-                            <p class="big white__muted">Clear estimates before work starts. No hidden fees.</p>
-                        </div>
-                        <div class="benefits-block">
-                            <h3 class="section-subheadline white">Premium focus</h3>
-                            <p class="big white__muted">We repair Sub-Zero systems daily — this is our specialty, not a side job.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CITIES -->
-            <section>
-                <div class="fixed-width-container">
-                    <div class="card">
-                        <h3 class="section-subheadline">Our service area</h3>
-                        <ul class="big four-column">
-                            <li>Southlake, TX</li>
-                            <li>Westlake, TX</li>
-                            <li>Colleyville, TX</li>
-                            <li>Trophy Club, TX</li>
-                            <li>Highland Village, TX</li>
-                            <li>Grapevine, TX</li>
-                            <li>Flower Mound, TX</li>
-                            <li>Coppell, TX</li>
-                            <li>Keller, TX</li>
-                            <li>Carrollton, TX</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- REVIEWS -->
-            <section>
-                <div class="fixed-width-container">
-                    <hr>
-                    <h2 class="section-headline">Customer reviews</h2>
-                    <div class="reviews-block">
-                        <p class="big">“Fast response, fixed our Sub-Zero fridge the same day. Professional and respectful.” – Sarah, Southlake</p>
-                        <p class="big">“Finally found a company that really understands Sub-Zero. Highly recommend.” – Mark, Colleyville</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- COMMON ISSUES -->
-            <section>
-                <div class="fixed-width-container">
-                    <hr>
-                    <h2 class="section-headline">Common Sub-Zero issues we fix</h2>
-                    <ul>
-                        <li>Refrigerator not cooling properly</li>
-                        <li>Freezer cold but fridge warm</li>
-                        <li>Ice maker not producing ice</li>
-                        <li>Door not sealing properly</li>
-                        <li>Excessive frost buildup</li>
-                        <li>Unit running constantly</li>
-                        <li>Water leaking inside or under fridge</li>
-                        <li>Unusual noise from condenser or fan</li>
-                        <li>Error codes on display</li>
-                        <li>Bad odor or moldy smell</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- FINAL CTA -->
-            <section class="section__colored">
-                <div class="fixed-width-container">
-                    <h2 class="section-headline white">Schedule your Sub-Zero repair today</h2>
-                    <p class="big white__muted">Don’t wait until the problem gets worse. Call us now for same-day service in your area.</p>
-                    <a href="tel:+14697300309" class="phone-number" class="cat-button">📞 Call Now: +1 (469) 730-0309</a>
-                </div>
-            </section>
-
-                <h3 class="section-subheadline white">Same-day, everyday service</h3>
-                <p class="big white__muted">We at AC/DC Appliance Repair value our and our clients’ time. Call us and be sure to meet our master later on the same day. Our working hours are 8 a.m to 8 p.m. seven days a week.</p>
-            </div>
-
-        </div>
-
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">AC/DC Dacor Service</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/decor-repair.html">Dacor Repair</a>
+        <a href="/refrigerator-repair.html">Refrigerators</a>
+        <a href="/oven-repair.html">Ovens & Ranges</a>
+        <a href="/cooktop-repair.html">Cooktops</a>
+        <a href="/ice-maker-repair.html">Ice Makers</a>
+        <a href="/appliance-repair.html">All Appliances</a>
+        <a class="btn btn-ghost" href="tel:+14697300309">Call (469) 730-0309</a>
+      </nav>
     </div>
-</section>
+  </header>
 
-        <!-- CITIES -->
-        <section>
-    <div class="fixed-width-container">
-        <div class="card">
-            <h3 class="section-subheadline">Our serving cities in Dallas-Fort Worth Area</h3>
-            
-            <ul class="big four-column">
-                <li>Southlake, TX</li>
-                <li>Westlake, TX</li>
-                <li>Colleyville, TX</li>
-                <li>Trophy Club, TX</li>
-                <li>Highland Village, TX</li>
-                <li>Grapevine, TX</li>
-                <li>Flower Mound, TX</li>
-                <li>Coppell, TX</li>
-                <li>Keller, TX</li>
-                <li>Carrollton, TX</li>
-            </ul>
-
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">DFW Dacor Specialists</p>
+          <h1>Dacor Appliance Repair & Service</h1>
+          <p class="lead">Independent specialists for Dacor appliances. Same-day availability, transparent pricing, and premium care for your kitchen.</p>
+          <div class="cta-group">
+            <a class="btn" href="tel:+14697300309">Call Now</a>
+            <a class="btn btn-ghost" href="#cta">Book Service</a>
+          </div>
+          <ul class="trust-points">
+            <li>Licensed & insured</li>
+            <li>Warranty on labor & parts</li>
+            <li>Local DFW coverage</li>
+          </ul>
         </div>
+        <div class="hero-panel">
+          <div class="panel-card">
+            <h3>Need fast help?</h3>
+            <p>Tell us your appliance type and issue. We dispatch the right independent specialist quickly.</p>
+            <form class="quick-form">
+              <label>
+                Appliance
+                <select name="appliance" id="appliance-select">
+                  <option value="" selected>Select appliance</option>
+                  <option>Refrigerator</option>
+                  <option>Freezer</option>
+                  <option>Ice Machine</option>
+                  <option>Oven / Range</option>
+                  <option>Cooktop</option>
+                  <option>Microwave</option>
+                  <option>Dishwasher</option>
+                  <option>Washer</option>
+                  <option>Dryer</option>
+                  <option>Wine Cooler</option>
+                </select>
+              </label>
+              <label>
+                Brand
+                <select name="brand" id="brand-select" disabled>
+                  <option value="" selected>Select brand</option>
+                </select>
+              </label>
+              <label>
+                Problem
+                <select name="problem" id="problem-select" disabled>
+                  <option value="" selected>Select appliance first</option>
+                </select>
+              </label>
+              <label>
+                ZIP Code
+                <input type="text" name="zip" id="zip-input" placeholder="Enter ZIP" inputmode="numeric" maxlength="5">
+              </label>
+              <button type="button" class="btn full-width">Request Callback</button>
+              <p class="form-note">We respond in minutes during business hours.</p>
+              <p class="form-note service-area">Service area: Southlake, Westlake, Colleyville, Trophy Club, Highland Village, Grapevine, Flower Mound, Coppell, Keller, Carrollton.</p>
+              <p class="form-note error-text" id="zip-error" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Services</p>
+          <h2>Dacor Service, Done Right</h2>
+          <p class="section-subtitle">Focused care for Dacor refrigeration, cooking, and specialty appliances.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Dacor Appliance Repair</h3>
+            <p>Precision diagnostics and repair for Dacor refrigerators, ranges, ovens, cooktops, and dishwashers.</p>
+            <a class="link-arrow" href="/decor-repair.html">Explore Dacor Repair</a>
+          </article>
+          <article class="card">
+            <h3>Refrigerator Repair</h3>
+            <p>Cooling issues, ice makers, leaks, and performance tuning for built-in and freestanding units.</p>
+            <a class="link-arrow" href="/refrigerator-repair.html">Explore Refrigerators</a>
+          </article>
+          <article class="card">
+            <h3>Oven & Range Repair</h3>
+            <p>Heat issues, ignition problems, and control diagnostics for Dacor ovens and ranges.</p>
+            <a class="link-arrow" href="/oven-repair.html">Explore Ovens</a>
+          </article>
+          <article class="card">
+            <h3>Cooktop Repair</h3>
+            <p>Gas and electric cooktop repairs, burner issues, and safety checks by independent specialists.</p>
+            <a class="link-arrow" href="/cooktop-repair.html">Explore Cooktops</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="why">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2>Premium Care. Local Expertise.</h2>
+        </div>
+        <div class="icon-grid">
+          <div class="icon-card">
+            <div class="icon-badge">⭐</div>
+            <h3>Independent Specialists</h3>
+            <p>Dedicated Dacor experts focused on precise diagnostics and long-term reliability.</p>
+          </div>
+          <div class="icon-card">
+            <div class="icon-badge">⚡</div>
+            <h3>Fast Response</h3>
+            <p>Same-day and next-day appointments with real-time ETA updates.</p>
+          </div>
+          <div class="icon-card">
+            <div class="icon-badge">💳</div>
+            <h3>Transparent Pricing</h3>
+            <p>Upfront quotes, no hidden fees, and approval before any work begins.</p>
+          </div>
+          <div class="icon-card">
+            <div class="icon-badge">🛡️</div>
+            <h3>Quality Guaranteed</h3>
+            <p>Warranty on labor and parts with careful post-service checks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="area">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Service Area</p>
+          <h2>Serving Dallas–Fort Worth</h2>
+          <p class="section-subtitle">Local DFW coverage with fast scheduling for Dacor repairs.</p>
+        </div>
+        <div class="area-grid">
+          <ul class="pill-list">
+            <li>Southlake</li>
+            <li>Westlake</li>
+            <li>Colleyville</li>
+            <li>Trophy Club</li>
+            <li>Highland Village</li>
+            <li>Grapevine</li>
+            <li>Flower Mound</li>
+            <li>Coppell</li>
+            <li>Keller</li>
+            <li>Carrollton</li>
+          </ul>
+          <div class="area-copy">
+            <h3>Local team</h3>
+            <p>You work directly with our Grapevine office for scheduling, updates, and follow-ups.</p>
+            <a class="link-arrow" href="/contacts/index.html">Contact our office</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" id="cta">
+      <div class="container cta-inner">
+        <div>
+          <p class="eyebrow">Get Help Now</p>
+          <h2>Book independent Dacor service today.</h2>
+          <p class="section-subtitle">Call for immediate scheduling or request a callback below.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="tel:+14697300309">Call (469) 730-0309</a>
+          <a class="btn btn-ghost" href="mailto:support@acdchomeservices.com">Email Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>AC/DC Dacor Service</h4>
+        <p>Premium Dacor appliance repair across the DFW metroplex.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+14697300309">(469) 730-0309</a><br><a href="mailto:support@acdchomeservices.com">support@acdchomeservices.com</a></p>
+        <p>501 Turner Rd # 924, Grapevine, TX 76051</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <p><a href="/decor-repair.html">Dacor Repair</a><br><a href="/refrigerator-repair.html">Refrigerator Repair</a><br><a href="/oven-repair.html">Oven & Range Repair</a><br><a href="/cooktop-repair.html">Cooktop Repair</a><br><a href="/appliance-repair.html">All Appliances</a></p>
+      </div>
     </div>
-</section>
-
-        <!-- REVIEWS -->
-        <section>
-    <div class="fixed-width-container">
-        <hr>
-        <h2 class="section-headline">What our customers say</h2>
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-27ba2164-9624-4923-84ac-869de3348ad8"></div>
+    <div class="container footer-bottom">
+      <p>© 2019-2025 AC/DC HVAC & Appliance Repair, LLC. All rights reserved.</p>
+      <p>Licensed & insured. Same-day service available.</p>
     </div>
-</section>
+  </footer>
 
-        <!-- PRICE RANGE -->
-        <section>
-    <div class="fixed-width-container">
-        <div class="col-8">
-            <hr>
-            <h2 class="section-headline">Service investment</h2>
-            <p class="big">Appliance repair costs an average <strong>$170</strong>, with a typical price range between <strong>$125–$245</strong>. This includes price of parts and professional service.</p>
-            <p class="big">Although most common problems are included in this range, there are several aspects that may increase the overall price. If the unit is older than 10 years, runs on natural gas or was sold above $5,000 when you bought it, it’ll probably cost more to fix it. Here’s what you can expect to pay based on the machine and other considerations.</p>
-
-            <h3 class="section-subheadline">Service call cost</h3>
-            <p class="big">Appliance diagnostic fee equals <strong>$60</strong>, but if you decide to fix it at AC/DC Appliance Repair, the estimate will be free.</p>
-
-            <div class="card">
-                <h3 class="section-subheadline">Factors affect cost of repair</h3>
-                <p class="big">It will cost <strong>$125 to $225</strong> to fix an appliance, but the total price may be hundreds of dollars higher depending on a few factors.</p>
-                <h4 class="section-label">Energy supply system</h4>
-                <p class="big">Gas or electric? Servicing of gas equipment like water heaters, dryers, ovens and stoves costs more. The reason is it carries more risk to repair gas appliances (e.g. carbon monoxide leaks or fire) than electric ones. Electric-powered models are more expensive to run, but it is usually cheaper to fix them.</p>
-                <h4 class="section-label">Accessibility of appliance</h4>
-                <p class="big">Rule #1: if your appliance is easily accessible, it will cost less to fix than one that’s difficult to reach. Rule #2: if the wiring is straightforward and easy to get to, you’ll likely pay less.</p>
-                <h4 class="section-label">Availability of parts</h4>
-                <p class="big">Parts for old appliances or rare systems are difficult to find and therefore they are expensive. To save money, offer your tech to take used parts. They’re frequently as good as new ones.</p>
-            </div>
-
-            <h3 class="section-subheadline">What to choose: DIY vs. hire an appliance repair tech?</h3>
-            <p class="big">Be careful working with electrical, plumbing or fuel connections. Putting yourself or your family in danger isn’t worth the money savings, especially when you’ll probably have to hire repair service to fix it anyway. If you need to undertake a risky operation like rewiring or replacing fridge compressor, don’t hesitate to call an AC/DC pro – we’ll help to do it safely, quickly, and professionally.
-            </p>
-        </div>
-    </div>
-</section>
-
-        <!-- INDEX -->
-        <!-- <section>
-    <ol>
-        <li><a href="#refrigerator">Refrigerator and Freezer</a></li>
-        <li><a href="#oven">Oven, Range and Cooktop</a></li>
-    </ol>
-</section> -->
-        <section>
-            <div class="fixed-width-container">
-                <hr>
-                <h2 class="section-headline">List of services on this page</h2>
-                <ol>
-                    <li><a href="#refrigerator">Refrigerator and Freezer</a></li>                   
-                    <li><a href="#oven">Oven, Range and Cooktop</a></li>
-                </ol>
-            </div>
-        </section>
-
-        <!-- REFRIGERATOR -->
-        <a name="refrigerator"></a>
-        <section>
-    <div class="fixed-width-container">
-        <div class="col-8">
-            <hr>
-            <h2 class="section-headline">Refrigerator and freezer repair price range</h2>
-            <p class="big"><a href="/refrigerator-repair">We can repair every all kinds of refrigerators</a> (built-in, French-door, top/bottom-freezer ones, etc.), undercounter food freezers and even wine cellars. We provide services for all brands and models. Feel free to call us! All our techs are trained and insured, and we provide guarantees for all our work. You can rest assured, we’ll have your fridge up and running in no time!</p>
-
-            <div class="card">
-                <h3 class="section-subheadline">Typical problems</h3>
-                <ul>
-                    <li>Not cooling</li>
-                    <li>Water dispenser/ice maker/ice dispenser is not working</li>
-                    <li>Ice maker is overflowing</li>
-                    <li>Not defrosting</li>
-                    <li>Noisy</li>
-                    <li>Defrost drain is clogged</li>
-                    <li>Freezer is cold but fridge is too warm</li>
-                    <li>Water is leaking</li>
-                    <li>Food is freezing</li>
-                    <li>Light is not working</li>
-                    <li>Fridge is running constantly</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3 class="section-subheadline">Refrigerator and freezer brands we repair</h3>
-                <ul class="two-column">
-                    <li>Sub-Zero</li>
-                    <li>Thermador</li>
-                    <li>Viking</li>
-                    <li>Monogram</li>
-                    <li>JennAir</li>
-                    <li>KitchenAid</li>
-                    <li>Dacor</li>
-                    <li>True Residential</li>
-                </ul>
-                <p class="big">
-                    We focus on premium refrigeration brands &mdash; Sub-Zero, Thermador, Viking, Monogram, JennAir, KitchenAid, Dacor, and True Residential. If you don&#39;t see your badge here, reach out and we&#39;ll let you know how we can help.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-        <!-- OVEN -->
-        <a name="oven"></a>
-        <section>
-    <a name="oven"></a>
-    <div class="fixed-width-container">
-        <div class="col-8">
-            <hr>
-            <h2 class="section-headline">Oven, Range, Cooktop repair price range</h2>
-            <p class="big">The average price of <a href="/oven-repair">repairing an oven</a> comprises <strong>$220</strong>, varying from <strong>$125 to $430</strong>. It depends primarily on the type of appliance.</p>
-
-            <div class="card">
-                <h3 class="section-subheadline">Typical problems</h3>
-                <p class="big">During the service life of these appliances, you can expect the following problems to occur:</p>
-                <ul>
-                    <li>Bad switch that causes the burner to run too hot</li>
-                    <li>Broken burner</li>
-                    <li>Defective indicator light</li>
-                    <li>Stuck oven door</li>
-                    <li>Problems with the igniter or valve causing the failure or malfunctioning of a unit</li>
-                    <li>Poor heating caused by problems with the main controller or igniter</li>
-                    <li>Faulty thermostat or sensor showing incorrect temperatures</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3 class="section-subheadline">Brands we service</h3>
-                <ul class="two-column">
-                    <li>Dacor</li>
-                    <li>JennAir</li>
-                    <li>KitchenAid</li>
-                    <li>Thermador</li>
-                   
-                    <li>Wolf</li>
-                </ul>
-                <p class="big">
-                    No matter what brand of oven, range or cooktop you have, we know how to fix it!
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-   
-        </div>
-    </div>
-</section>
-
-    </article>
-</main>
-    <footer>
-    <div class="fixed-width-container footer-container">
-
-        <div class="footer-block">
-            <img class="footer-block-image" src="/assets/svg/logo-sign.svg" alt="AC/DC HVAC & Appliance Repair">
-            <p class="big white">Thank you for your interest in AC/DC Appliance Repair</p>
-        </div>
-
-        <div class="footer-block">
-            <p class="big white">
-                Address: 501 Turner Rd # 924, Grapevine TX 76051
-                <br>
-                Phone: +14697300309
-                <br>
-                E-mail: support@acdchomeservices.com
-            </p>
-        </div>
-
-        <div class="footer-block">
-            <p class="small white">
-                © 2019-2025 AC/DC HVAC & Appliance Repair, llc. All rights reserved.
-            </p>
-        </div>
-
-    </div>
-</footer>
-
-    <!-- <script>
-        (function(w,d,u){
-                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
-                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-        })(window,document,'https://cdn-ru.bitrix24.ru/b17945132/crm/site_button/loader_2_mzs9f6.js');
-    </script> -->
-
-<!-- Phone Tracking Script -->
-<script src="/js/phone-tracking.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/js/phone-tracking.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AC/DC Dacor Service",
+    "telephone": "+1-469-730-0309",
+    "email": "support@acdchomeservices.com",
+    "url": "https://decor.acdchomeservices.com/",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "501 Turner Rd # 924",
+      "addressLocality": "Grapevine",
+      "addressRegion": "TX",
+      "postalCode": "76051",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Southlake"},
+      {"@type": "City", "name": "Westlake"},
+      {"@type": "City", "name": "Colleyville"},
+      {"@type": "City", "name": "Trophy Club"},
+      {"@type": "City", "name": "Highland Village"},
+      {"@type": "City", "name": "Grapevine"},
+      {"@type": "City", "name": "Flower Mound"},
+      {"@type": "City", "name": "Coppell"},
+      {"@type": "City", "name": "Keller"},
+      {"@type": "City", "name": "Carrollton"}
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "07:00",
+      "closes": "20:00"
+    },
+    "servesCuisine": "N/A"
+  }
+  </script>
 </body>
 </html>
