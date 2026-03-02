@@ -181,6 +181,30 @@
   const submitBtn = document.querySelector('.quick-form .btn.full-width');
   const serviceZips = ['76051', '76053', '76052'];
 
+  function trackQuickForm(payload) {
+    const eventName = 'quick_form_submit';
+    const eventPayload = Object.assign({
+      brandName: 'Dacor',
+      pagePath: window.location.pathname
+    }, payload || {});
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(Object.assign({ event: eventName }, eventPayload));
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, eventPayload);
+    }
+
+    if (typeof window.uetq !== 'undefined') {
+      window.uetq = window.uetq || [];
+      window.uetq.push('event', eventName, eventPayload);
+    }
+
+    if (typeof window.ym === 'function') {
+      window.ym(105949121, 'reachGoal', eventName, eventPayload);
+    }
+  }
+
   function validateZip() {
     if (!zipInput) return false;
     const value = (zipInput.value || '').trim();
@@ -202,7 +226,12 @@
         e.preventDefault();
         return;
       }
-      // placeholder submit handling
+      trackQuickForm({
+        appliance: applianceSelect ? applianceSelect.value : '',
+        brand: brandSelect ? brandSelect.value : '',
+        problem: problemSelect ? problemSelect.value : '',
+        zip: zipInput.value.trim()
+      });
       alert('Callback requested. We will contact you shortly.');
     });
     zipInput.addEventListener('input', validateZip);
